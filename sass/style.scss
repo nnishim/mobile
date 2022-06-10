@@ -1,1 +1,66 @@
-@import './fonts'
+@import "./fonts";
+@import "./header";
+@import "./slider";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-family: MontserratSemiBold , sans-serif;
+  line-height: 1.5;
+  &.lock{
+    overflow: hidden;
+  }
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 5px;
+}

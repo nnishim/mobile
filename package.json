@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "hamburgers": "^1.2.1",
+    "swiper": "^8.2.3"
+  }
+}

@@ -1,0 +1,109 @@
+.header{
+  margin-bottom: 50px;
+  &__logo{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+}
+.navbar {
+  z-index: 100;
+  display: flex;
+  padding: 10px 0;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 30px solid #6125B0;
+  background: #fff;
+}
+.logo{
+  width: 100%;
+  &__block{
+    max-width: 240px;
+  }
+  &__block--bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 20px;
+  }
+}
+.nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #7c30de;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px 0;
+  transform: translateX(100%);
+  z-index: 1000;
+  transition: 0.4s ease-in-out;
+  &__link {
+    color: #fff;
+    font-size: 16px;
+    font-family: SansationRegular;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: #fff;
+      bottom: -3px;
+      left: 0;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+    }
+    &:not(.active):hover::before {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+    &.active{
+      border-bottom: 3px solid #fff;
+    }
+  }
+  &__call-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__btn {
+    font-family: SansationBold;
+    font-size: 20px;
+    padding: 12px 40px;
+    background: linear-gradient(193.98deg, #6125B0 48.69%, rgba(97, 37, 176, 0) 158.31%);
+    border-radius: 10px;
+    color: #ffffff;
+    transition: .3s ease-in-out;
+    margin-bottom: 20px;
+    &:hover{
+      background: transparent;
+    }
+  }
+}
+.nav.is-active {
+  transform: translate(0);
+}
+.hamburger {
+  z-index: 1001;
+}
+.call__num{
+  display: inline-block;
+  font-family: SansationRegular;
+  color: #fff;
+  margin-bottom: 15px;
+  &:last-child{
+    margin: 0;
+  }
+}

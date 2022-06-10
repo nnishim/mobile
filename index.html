@@ -1,13 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/hamburgers/dist/hamburgers.css"
+    />
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Фабрика окон</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="navbar">
+          <div class="header__logo">
+            <div class="logo__block">
+              <a href="#" class="logo__link">
+                <img src="./img/logo.png" alt="" class="logo" />
+              </a>
+            </div>
+            <div class="logo__block logo__block--bottom">
+              <a href="#" class="logo__link">
+                <img src="./img/company-logo1.png" alt="" class="logo" />
+              </a>
+              <a href="#" class="logo__link">
+                <img src="./img/company-logo2.png" alt="" class="logo" />
+              </a>
+            </div>
+          </div>
+          <button class="hamburger hamburger--spring" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+          <nav class="nav">
+            <a href="#" class="nav__link active">Покупателям продукции</a>
+            <a href="#" class="nav__link">Партнёрам и дилерам</a>
+            <a href="#" class="nav__link">Строительным компаниям</a>
+            <a href="#" class="nav__link">Портфолио</a>
+            <a href="#" class="nav__link">Контакты</a>
+            <a href="#" class="nav__link">О компании</a>
+            <div class="nav__call-block">
+              <a href="#" class="nav__btn">Перезвоните мне</a>
+              <span class="call__num">Купить окно: 0557 53 00 64</span>
+              <span class="call__num">Купить окно: 0557 53 00 64</span>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="slider">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/slide1.jpg" alt="" class="slide__img" />
+              <div class="slide__info">
+                <h2 class="slide__title">Пластиковые окна от производителя</h2>
+                <p class="slide__desc">
+                  Энергосберегающие оконные системы немецкого качества по
+                  доступным ценам Москитная сетка в подарок
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/slide2.jpg" alt="" class="slide__img" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./node_modules/swiper/swiper-bundle.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
