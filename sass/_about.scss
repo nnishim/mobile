@@ -1,0 +1,74 @@
+.about-company{
+  text-align: center;
+  &__short-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
+    margin-bottom: 100px;
+  }
+  &__video{
+    margin-bottom: 30px;
+  }
+  &__info{
+    margin-bottom: 50px;
+  }
+  &__images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  &__completion{
+    margin-bottom: 50px;
+  }
+  &__btn{
+    padding: 15px 18px;
+    font-family: SansationBold;
+    font-size: 16px;
+    background: linear-gradient(193.98deg, #6125B0 48.69%, rgba(97, 37, 176, 0) 158.31%);
+    border-radius: 10px;
+    color: #fff;
+  }
+}
+.short-info{
+  &__item{
+    text-align: center; 
+  }
+  &__iblock{
+    max-width: 100px;
+    min-height: 100px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+  }
+  &__icon{
+    width: 100%;
+    object-fit: cover;
+  }
+  &__text{
+    font-size: 20px;
+    color: #000;
+  }
+}
+.info__text{
+  font-family: MontserratRegular;
+  color: #000;
+  font-size: 18px;
+}
+.images{
+  &__iblock{
+    max-width: 420px;
+  }
+  &__img{
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.completion__text{
+  font-family: MontserratRegular;
+  color: #000;
+  font-size: 18px;
+}
