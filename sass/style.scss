@@ -59,8 +59,17 @@ textarea,
 select {
   font: inherit;
 }
+.wrapper{
+  overflow: hidden;
+  background: #fff;
+}
 .container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 5px;
+}
+.title{
+  font-size: 38px;
+  margin-bottom: 50px;
+  color: #000;
 }
