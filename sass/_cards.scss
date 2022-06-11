@@ -1,5 +1,8 @@
 .cards {
   margin-bottom: 50px;
+  &__title{
+    color: #6125B0 !important;
+  }
   &__content {
     display: flex;
     flex-direction: column;

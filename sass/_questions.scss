@@ -1,0 +1,45 @@
+.questions{
+  margin-bottom: 50px;
+  &__content{
+    padding: 20px;
+    background: rgba(234, 234, 234, 0.5);;
+  }
+  &__list{
+    &-item{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 20px;
+      color: #000;
+      font-family: MontserratMedium;
+      position: relative;
+      margin-bottom: 45px;
+      &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 0.5px;
+        width: 100%;
+        margin-bottom: -15px;
+        background: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+  &__button{
+    text-align: center;
+  }
+  &__btn{
+    background: linear-gradient(185.73deg, #6125B0 27.64%, rgba(97, 37, 176, 0) 217.97%);
+    border-radius: 5px;
+    font-family: MontserratMedium;
+    font-size: 18 px;
+    padding: 11px 20px;
+    border: none;
+    color: #fff;
+  }
+}
+.plus{
+  font-size: 30px;
+  color: #6125B0;
+}

@@ -1,0 +1,26 @@
+.reviews{
+  margin-bottom: 100px;
+  &__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
+  }
+  &__item{
+    &-iblock{
+      border-radius: 5px;
+      max-width: 70px;
+      float: left;
+      margin: 0 20px 0 0;
+    }
+    &-img{
+      width: 100%;
+      object-fit: cover;
+    }
+    &-text{
+      font-family: MontserratRegular;
+      font-size: 16px;
+    }
+  }
+}

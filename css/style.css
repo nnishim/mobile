@@ -363,6 +363,9 @@
 .cards {
   margin-bottom: 50px;
 }
+.cards__title {
+  color: #6125B0 !important;
+}
 .cards__content {
   display: flex;
   flex-direction: column;
@@ -407,6 +410,154 @@
   font-family: MontserratMedium;
   font-size: 22px;
   color: #fff;
+}
+
+.partners {
+  margin-bottom: 50px;
+}
+.partners__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.partners__item {
+  background: url("../img/partners-img.jpg") center no-repeat;
+  background-size: cover;
+  padding: 30px 15px;
+  min-height: 500px;
+}
+.partners__item-title {
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
+  margin-bottom: 30px;
+}
+.partners__item-desc {
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
+}
+
+.questions {
+  margin-bottom: 50px;
+}
+.questions__content {
+  padding: 20px;
+  background: rgba(234, 234, 234, 0.5);
+}
+.questions__list-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  color: #000;
+  font-family: MontserratMedium;
+  position: relative;
+  margin-bottom: 45px;
+}
+.questions__list-item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.5px;
+  width: 100%;
+  margin-bottom: -15px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.questions__button {
+  text-align: center;
+}
+.questions__btn {
+  background: linear-gradient(185.73deg, #6125B0 27.64%, rgba(97, 37, 176, 0) 217.97%);
+  border-radius: 5px;
+  font-family: MontserratMedium;
+  font-size: 18 px;
+  padding: 11px 20px;
+  border: none;
+  color: #fff;
+}
+
+.plus {
+  font-size: 30px;
+  color: #6125B0;
+}
+
+.reviews {
+  margin-bottom: 100px;
+}
+.reviews__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 35px;
+}
+.reviews__item-iblock {
+  border-radius: 5px;
+  max-width: 70px;
+  float: left;
+  margin: 0 20px 0 0;
+}
+.reviews__item-img {
+  width: 100%;
+  object-fit: cover;
+}
+.reviews__item-text {
+  font-family: MontserratRegular;
+  font-size: 16px;
+}
+
+.footer {
+  font-family: MontserratRegular;
+}
+.footer__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer__logo {
+  width: 100%;
+  object-fit: cover;
+}
+.footer__logo-content {
+  max-width: 300px;
+  text-align: center;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 auto;
+}
+.footer__logo-desc {
+  margin-bottom: 30px;
+}
+.footer__info-list {
+  text-align: center;
+}
+.footer__info-item {
+  margin-bottom: 20px;
+}
+.footer__contact-item {
+  display: flex;
+  justify-content: center;
+}
+.footer__contact-numbers {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.footer__contact-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 *,
@@ -469,7 +620,7 @@ select {
 
 .wrapper {
   overflow: hidden;
-  background: #fff !important;
+  background: #fff;
 }
 
 .container {

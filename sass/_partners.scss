@@ -1,0 +1,29 @@
+.partners {
+  margin-bottom: 50px;
+  &__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  &__item {
+    background: url("../img/partners-img.jpg") center no-repeat;
+    background-size: cover;
+    padding: 30px 15px;
+    min-height: 500px;
+    &-title {
+      font-size: 30px;
+      color: #fff;
+      text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000,
+        0 -1px 1px #000;
+      margin-bottom: 30px;
+    }
+    &-desc {
+      font-size: 18px;
+      color: #fff;
+      text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000,
+        0 -1px 1px #000;
+    }
+  }
+}
