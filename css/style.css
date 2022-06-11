@@ -469,7 +469,7 @@ select {
 
 .wrapper {
   overflow: hidden;
-  background: #fff;
+  background: #fff !important;
 }
 
 .container {
