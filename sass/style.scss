@@ -2,6 +2,9 @@
 @import "./header";
 @import "./slider";
 @import "./about";
+@import "./team";
+@import "./works";
+@import "./cards";
 
 *,
 *::before,
@@ -70,7 +73,7 @@ select {
   padding: 0 5px;
 }
 .title{
-  font-size: 38px;
+  font-size: 30px;
   margin-bottom: 50px;
   color: #000;
   text-align: center;

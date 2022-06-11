@@ -1,0 +1,38 @@
+.team {
+  margin-bottom: 60px;
+  &__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+  &__card {
+    background: linear-gradient(
+      185.73deg,
+      #6125b0 27.64%,
+      rgba(97, 37, 176, 0) 217.97%
+    );
+    width: 315px;
+    padding: 40px;
+    text-align: center;
+    &-iblock {
+      max-width: 150px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+    &-img {
+      width: 100%;
+      object-fit: cover;
+    }
+    &-name{
+      font-size: 20px;
+      color: #fff;
+      margin-bottom: 18px;
+    }
+    &-prof{
+      font-size: 16px;
+      color: #fff;
+    }
+  }
+}
